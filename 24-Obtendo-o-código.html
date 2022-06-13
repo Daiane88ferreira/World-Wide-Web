@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtendo o código</title>
+</head>
+<body>
+    <h1>Código distribuído WorldWideWeb</h1>
+    <p>
+        Veja os direitos autorais do CERN . Este é o arquivo README que você obtém quando desempacota um de nossos arquivos tar. Esses arquivos contêm informações sobre hipertexto, sistemas de hipertexto e o projeto WorldWideWeb. Se você tiver feito isso com um arquivo .tar, terá apenas um subconjunto dos arquivos.
+     <p>
+        ESTE ARQUIVO É UMA VERSÃO MUITO RESUMIDA DAS INFORMAÇÕES DISPONÍVEIS NA WEB. EM CASO DE DÚVIDA, LEIA A WEB DIRETAMENTE. Se você não tiver nenhum navegador instalado, faça isso por telnet para info.cern.ch (sem nome de usuário ou senha).
+     </p>   
+     <h2>Estrutura do diretório de arquivo </h2>
+     <p> 
+        Em /pub/www, além deste arquivo README, você encontrará os diretórios bin, src e doc. Os principais arquivos são os seguintes:
+     </p>
+     <dt>src/WWWLibrary_v.vv.tar.Z</dt>
+     <dd>
+        A Biblioteca W3. Todas as fontes e Makefiles para sistemas selecionados.
+        </dd> 
+        <dt>src/WWWLineMode_v.vv.tar.Z</dt>
+         <dd>
+            O navegador do modo de linha - todas as fontes e Makefiles para sistemas selecionados. Requer a Biblioteca .
+            </dd> 
+            <dt>src/WWW/LineModeDefaults_v.vv.tar.Z</dt>
+         <dd>
+            A documentação on-line para o navegador de modo de linha, que você ainda pode desejar se obtiver o programa como binário. Um subconjunto da fonte completa acima.
+            </dd> 
+            <dt>src/WWWNextStepEditor.tar.</dt>
+         <dd>
+            O navegador/editor de hipertexto para o NeXT -- fonte e binário.
+            </dd> 
+            <dt>src/WWWDaemon_v.vv.tar.Z</dt>
+         <dd>
+            O daemon HTTP e os programas de gateway WWW-WAIS. Fonte.
+            </dd> 
+            <dt>doc/WWWBook.tar.Z</dt>
+         <dd>
+            Um instantâneo de nossa documentação interna - preferimos que você acesse on-line - veja os avisos abaixo
+            </dd> 
+            <dt>bin/xxx/bbbb</dt>
+         <dd>
+            Binários executáveis ​​do programa bbbb para o sistema xxx. Verifique o que está lá antes de se preocupar em compilar. (Nota HP é chamado de "serpente")
+            </dd> 
+            <h2> Estrutura de diretório gerada</h2>
+            <p>
+                Os arquivos tar são todos projetados para serem desempacotados no mesmo (este) diretório. Eles criam diferentes partes de uma árvore de diretórios comum nesse diretório. Pode haver alguma duplicação. Eles também geram alguns arquivos neste diretório: README.*, Copyright.* e algumas instruções de instalação (.txt)
+            </p>
+            <h2>Navegador/Editor NeXTStep</h2>
+            <p>
+                O navegador para o NeXT são os arquivos contidos no diretório de aplicativos WWW/Next/Implementation/WorldWideWeb.app e são compilados. Ao instalar o aplicativo, você pode configurar a página padrão, WorldWideWeb.app/default.html. Estes devem apontar para algumas informações úteis! Você deve mantê-lo atualizado com indicadores de informações em seu site e em outros lugares. Se você usar a página inicial do CERN, observe que há um link na parte inferior para a cópia mestre em nosso servidor. Consulte as instruções de instalação .
+            </p>
+            <h2>Navegador de modo de linha</h2>
+            <P> Binários disso para alguns sistemas estão disponíveis em /pub/www/bin/ .</P>
+
+            <p>. Se o binário existir para o seu sistema, pegue-o e também o /pub/www/WWWLineModeDefaults.tar.Z. Desembrulhe a documentação e coloque (link) seu diretório em /usr/local/lib/WWW em sua máquina. Coloque o executável www em seu caminho em algum lugar e pronto.</p>
+
+            <p>Se não existir nenhum binário, proceda da seguinte forma. Pegue o arquivo tar de origem WWWLineMode_v.vv.tar.Z , descompacte e descompacte-o. Você encontrará o navegador de modo de linha em WWW/LineMode/Implementation/... (Consulte as notas de instalação ). Faça o mesmo (no mesmo diretório) com o arquivo WWWLibrary_v.cc.tar.Z para obter a biblioteca comum.</p>
+
+            <p>Você terá um manual imprimível ASCII no arquivo WWW/LineMode/Defaults/line-mode-guide.txt que você pode imprimir nesta fase. Esta é uma cópia congelada de parte da documentação online.</p>
+
+            <p>Os subdiretórios para WWW/LineMode contêm Makefiles para sistemas para os quais já portamos. Se o seu sistema não estiver entre eles, crie um novo subdiretório com o nome do sistema e copie o Makefile de um existente. Altere os nomes dos diretórios conforme necessário. POR FAVOR, INFORME-NOS SOBRE AS ALTERAÇÕES QUANDO TER FEITO A PORTA. Esta é uma condição de seu uso deste código, e evitará que outros repitam seu trabalho e evitará que você o repita em versões futuras.</p>
+
+            <p>Ao instalar os navegadores, você deve configurar a página padrão. Este é /usr/local/lib/WWW/default.html para o navegador de modo de linha. Isso deve apontar para algumas informações úteis! Você deve mantê-lo atualizado com indicadores de informações em seu site e em outros lugares. Se você usar a página inicial do CERN, observe que há um link na parte inferior para a cópia mestre em nosso servidor.</p>
+
+            <p>Alguma documentação básica sobre o navegador é fornecida com a página inicial no diretório WWW/LineMode/Defaults. Um arquivo tar separado desse diretório (WWWLineModeDefaults.tar.Z) está disponível se você quiser apenas atualizá-lo.</p>
+
+            <p>O restante da documentação está em hipertexto e, portanto, poderá ser lido mais facilmente com um navegador. Sugerimos que após a instalação do navegador, você navegue pela documentação básica para estar ciente das opções e possibilidades de personalização, por exemplo.</p>
+
+            <h2>Navegador Viola para X11</h2>
+             <p>Viola é um aplicativo X11 para leitura de hipertexto global. Se um binário estiver disponível em sua máquina, em /pub/www/bin/.../viola*, pegue-o e também o arquivo tar "apps" do Viola que contém os scripts necessários. </p>
+
+            <p>Para gerar isso a partir do código-fonte, você precisará da biblioteca W3 e dos arquivos-fonte do Viola. Existe um Imakefile com o diretório fonte da viola. Você precisará gerar as bibliotecas XPA e XPM e a biblioteca W3 antes de fazer a própria viola.</p>
+
+            <h2>Documentação</h2>
+            <p>No diretório /pub/www/doc há vários artigos, preprints e guias na web. </p>
+
+            <p>Consulte a bibliografia online da WWW para obter uma lista destes e de outros artigos, livros, etc.</p>
+
+            <p>O arquivo /pub/www/doc/WWWBook.tar.Z é um extrato do texto da documentação do projeto WorldWideWeb (WWW).</p>
+
+            <p>Este é um instantâneo de um sistema de hipertexto em mudança. O texto é fornecido apenas como exemplo de hipertexto, não para distribuição geral. A exatidão de qualquer informação não é garantida, e nenhuma responsabilidade será aceita pelos autores por qualquer perda ou dano devido a imprecisão ou omissão. Uma cópia da documentação está inevitavelmente desatualizada e pode ser inconsistente. Existem links para informações que não são fornecidas nesse arquivo tar. Se algum desses fatos causar algum problema, você deve acessar os dados mestres originais pela rede usando www ou envie-nos um e-mail.</p>
+
+            <h2>Servidores</h2>
+            <p>O arquivo tar Daemon contém (nesta versão) o código para o daemon HTTP básico para servir arquivos e também para o gateway WWW-WAIS. Para compilar o gateway WAIS, você precisará de [um link para] uma distribuição WAIS no mesmo nível do diretório WWW.</p>
+
+            <h2>Em geral</h2>
+            <p>É claro que seus comentários serão mais apreciados, em código ou informações na web que estão desatualizadas ou enganosas. Se você escrever seu próprio hipertexto e disponibilizá-lo por ftp anônimo ou usando um servidor, informe-nos e colocaremos algumas dicas sobre ele no nosso. Assim se espalha a web...
+            <address>
+                
+                <font style="vertical-align: inherit;">Tim Berners-Lee</font> 
+                <p>
+                    
+                    <font style="vertical-align: inherit;">Projeto WorldWideWeb</font>
+                </p>
+                <p> <font style="vertical-align: inherit;">CERN, 1211 Genebra 23, Suíça</font></p>
+
+                <font style="vertical-align: inherit;">Tel: +41 22 767 3755; Fax: +41 22 767 7155; e-mail: timbl@info.cern.ch</font>
+                </p>
+            </address>    
+            </p>
+
+
+
+
+           
+
+</body>
+</html>
